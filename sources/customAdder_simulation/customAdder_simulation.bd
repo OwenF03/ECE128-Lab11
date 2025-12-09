@@ -1,0 +1,89 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xAEF61EFEAEF61EFE",
+      "device": "xc7a35tcpg236-2L",
+      "gen_directory": "../../../../Lab11.gen/sources_1/bd/customAdder_simulation",
+      "name": "customAdder_simulation",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "RippleCarryAdder8_0": ""
+    },
+    "ports": {
+      "A_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "S_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+              "{} maximum {}} value 9} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+              "bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 9",
+              "}"
+            ],
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "RippleCarryAdder8_0": {
+        "vlnv": "xilinx.com:user:RippleCarryAdder8:1.0",
+        "xci_name": "customAdder_simulation_RippleCarryAdder8_0_0",
+        "xci_path": "ip\\customAdder_simulation_RippleCarryAdder8_0_0\\customAdder_simulation_RippleCarryAdder8_0_0.xci",
+        "inst_hier_path": "RippleCarryAdder8_0"
+      }
+    },
+    "nets": {
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "RippleCarryAdder8_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "RippleCarryAdder8_0/B"
+        ]
+      },
+      "RippleCarryAdder8_0_S": {
+        "ports": [
+          "RippleCarryAdder8_0/S",
+          "S_0"
+        ]
+      }
+    }
+  }
+}
